@@ -1,0 +1,49 @@
+
+.card{
+    border-radius: 15px;
+     height: 240px;    
+     transition: all .2s ease-in-out;
+}
+
+
+
+.percent{
+    border: 1.5px solid #292D32;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+span{
+    font-size: 32px;
+}
+
+.card:hover {
+    background: #fced70;
+    filter: drop-shadow(-6px 6px 15px rgba(0,0,0,.25));
+    
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+
+@media screen  and (max-width:600px) {
+    .percent{
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+
+    }
+    .col-sm-4{
+        margin-bottom: 20px;
+       
+    }
+    
+    .mb-50{
+        margin-bottom: 10px;
+    }
+}

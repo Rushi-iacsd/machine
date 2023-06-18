@@ -1,0 +1,38 @@
+
+
+
+<h2>User Overviews</h2>
+<div class="row mb-2 ">
+    <div class="col-sm-4 mb-md-5" *ngFor="let card of cardArray">
+
+        <div class="card shadow-lg " >
+            <div class="card-body">
+                <div class="row mb-50 ">
+                    <div class="col-sm-6">
+                        <h2>{{card.title}}</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="percent">
+                            <span>{{card.percentange}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading d-flex justify-content-between">
+                            <h3 class="d-flex align-items-center">
+                                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="circle" color="primary"></mat-icon>
+                                In Progress
+                            </h3>
+                            <p>
+                                {{card.InProgress}} %
+                            </p>
+                        </div>
+                        <mat-progress-bar mode="determinate" [value]="card.InProgress"></mat-progress-bar>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

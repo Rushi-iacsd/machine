@@ -1,0 +1,53 @@
+
+.icons{
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #AAA3FF;
+    border-right: 2px solid white;
+}
+
+.last-icon{
+    border-right: 0;
+}
+
+.bl{
+    border-radius: 15px 0 0 15px;
+}
+
+
+
+.br{
+    border-radius: 0 15px 15px 0;
+}
+
+.icon-1{
+    background-image: url('../../../../assets/images/Vector\ 1.png');
+    background-repeat: no-repeat;
+}
+
+
+.vector2{
+    position: absolute;
+    top:0;
+    right: 16px;
+    height: 220px;
+    border-radius: 0 0 15px 0;
+}
+
+@media screen  and (max-width:600px){
+        .icons{
+            margin-bottom: 20px;
+            border: 0;
+            border-radius: 15px;
+        }
+        .vector2 {
+            display: none;
+        }
+        .last-icon{
+            background-image: url('../../../../assets/images/Vector\ \(2\).png');
+        }
+}
