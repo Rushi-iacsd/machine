@@ -14,6 +14,10 @@ import { LoansectionComponent } from './shared/components/loansection/loansectio
 import { DashboarddescribeComponent } from './shared/components/dashboarddescribe/dashboarddescribe.component';
 import {MatIconModule} from '@angular/material/icon';
 import { CreateUserComponent } from './shared/components/create-user/create-user.component';
+import { UsertableComponent } from './shared/components/usertable/usertable.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { ChartComponent } from './shared/components/chart/chart.component';
 
 
 
@@ -28,6 +32,8 @@ import { CreateUserComponent } from './shared/components/create-user/create-user
     LoansectionComponent,
     DashboarddescribeComponent,
     CreateUserComponent,
+    UsertableComponent,
+    ChartComponent,
     
   ],
   imports: [
@@ -35,7 +41,10 @@ import { CreateUserComponent } from './shared/components/create-user/create-user
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

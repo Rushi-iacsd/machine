@@ -19,22 +19,27 @@
          User
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">user table</a>
+            <a class="dropdown-item" routerLink="/usertable">user table</a>
             
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" routerLink="/createUser">create User</a>
           </div>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Chart</a>
+            <a class="nav-link" routerLink="/chart">Chart</a>
           </li>
       
           
           <li class="nav-item">
-            <a class="nav-link" href="#"><img src="../../../../assets/images/Vector.png" alt=""></a>
+            <a class="nav-link" href="#"(click)="onFullscreen()" (click)="closeFullscreen()"><img src="../../../../assets/images/Vector.png" alt=""></a>
           </li>
-      
-     
+          
+<!--       
+       <button class="btn btn-primary" (click)="value=!value">click</button>
+       <p class="text-white">   
+       {{value}}
+      </p>  -->
+
       </ul>
      
     </div>
